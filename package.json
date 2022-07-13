@@ -1,0 +1,50 @@
+{
+  "name": "ledsworth.com",
+  "version": "1.0.0",
+  "description": "Family Website—we're too lazy to send holiday cards.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf _site",
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy",
+    "update": "npx npm-check -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sledsworth@github.com/sledsworth/ledsworth.com.git"
+  },
+  "keywords": [
+    "eleventy",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": {
+    "name": "Steven Ledsworth",
+    "email": "steve@ledsworth.com",
+    "url": "https://ledsworth.com/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sledsworth/ledsworth.com/issues"
+  },
+  "homepage": "https://github.com/sledsworth/ledsworth.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy-navigation": "^0.3.3",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "clean-css": "^5.3.0",
+    "eslint": "^8.19.0",
+    "luxon": "^2.4.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-accessible-lists": "^1.1.0",
+    "markdown-it-anchor": "^8.6.4",
+    "markdown-it-footnote": "^3.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "terser": "^5.14.1"
+  }
+}

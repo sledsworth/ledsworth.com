@@ -1,0 +1,45 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+	{% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+	{% set nextPost = collections.posts | getNextCollectionItem(page) %}
+
+	<article>
+		<header>
+			<h1>{{ title }}</h1>
+			<ul>
+				{% for tag in tags %}
+					{%- if collections.tagList.indexOf(tag) != -1 -%}
+						<li>
+							{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+							<a href="{{ tagUrl | url }}">{{ tag }}</a>
+						</li>
+					{%- endif -%}
+				{% endfor %}
+			</ul>
+			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+		</header>
+		<section>
+			{{ content | safe }}
+		</section>
+	</article>
+	<nav>
+		<ul>
+			<li>
+				{% if nextPost %}
+					<span>Newer</span>
+					<a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+				{% endif %}
+			</li>
+			<li class="home">
+				<a href="/">Home</a>
+			</li>
+			<li>
+				{% if previousPost %}
+					<span>Older</span>
+					<a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+				{% endif %}
+			</li>
+		</ul>
+	</nav>
+{% endblock %}

@@ -1,0 +1,8 @@
+<ol class="post-list" reversed>
+	{% for post in postslist | reverse %}
+	{% set isLinkPost = post.data.link != undefined %}
+	{% set isDifferentDate = prevDate !== (post.date | htmlDateString) %}
+	{% set prevDate = post.date | htmlDateString %}
+	{% include "post-list-item.njk" %}
+	{% endfor %}
+</ol>

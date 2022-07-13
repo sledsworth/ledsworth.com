@@ -1,0 +1,15 @@
+{
+  "title": "The Ledsworths",
+  "url": "https://ledsworth.com/",
+  "description": "The Ledsworth's family website—because sending holiday cards to the whole lot seemed like a touch to much.",
+  "feed": {
+    "subtitle": "",
+    "filename": "rss.xml",
+    "path": "rss",
+    "id": "https://sledsworth.com/"
+  },
+  "author": {
+    "name": "Steve Ledsworth",
+    "email": "sledsworth@gmail.com"
+  }
+}

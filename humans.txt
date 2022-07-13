@@ -1,0 +1,43 @@
+# humans.txt
+
+[The humans responsible & technology colophon](http://humanstxt.org/)
+
+*This file is valid markdown.*
+
+
+## TEAM
+
+	Steve Ledsworth
+	Contact:  steve@ledsworth.com
+	Twitter:  @sledsworth
+	From:     Detroit, Michigan, United States
+
+
+## TECHNOLOGY COLOPHON
+
+### Workflow
+
+ * Eleventy
+ * Grunt.js
+ * Uglify
+ * SASS
+ * CSSMin
+ * Prism.js Syntax Highlighter
+
+
+## SITE
+
+	Last update:2012/02/04
+	Language: English
+	Doctype:HTML5
+	IDE: VS Code, Nova
+
+
+## THANKS
+
+  Zach Leatherman
+  Twitter:  @zachleat
+  For eleventyjs, inspiration, and being a fantastic person.
+
+
+  More at https://github.com/sledsworth/sledsworth.com

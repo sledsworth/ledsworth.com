@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/post.njk",
+  "date": "Created",
+  "tags": ["posts"]
+}

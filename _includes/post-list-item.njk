@@ -1,0 +1,10 @@
+<li>
+  <article>
+    <h2>
+      <a href="{{ post.url | url }}">
+        {{ post.data.title }}
+      </a>
+    </h2>
+    <p class="post-list-item-excerpt post-content">{{ post.data.description }}{{ post.templateContent | safe }}</p>
+  </article>
+</li>
